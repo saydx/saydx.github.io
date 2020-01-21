@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+
+<h2>What is SAYDX?</h2>
+
+<p>
+  The Structured Array Data Exchange (SAYDX) is a multi-level protocol enabling
+  a flexible and efficient exchange of structured array data between various
+  application. It is currently being drafted by various contributors.
+</p>
+
+<p>
+  We envision SAYDX as a hybrid of JSON and HDF5. It should allow to send
+  complex messages between applications, each message containing a tree of named
+  nodes with array data in the leafs. It should be a simple protocol enabling a
+  lightweight implementation. It is supposed to support various transport
+  layers, such as
+  <ul>
+    <li>File I/O (binary and text)</li>
+    <li>Binary API (with C and Fortran interfaces)</li>
+    <li>Socket communication</li>
+    <li>MPI-communication</li>
+  </ul>
+</p>
+
+<p>
+  SAYDX should serve as a base protocol for higher level protocols, e.g. a
+  protocol to exchange data between atomistic simulation packages.
+</p>
